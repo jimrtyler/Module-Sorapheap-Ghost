@@ -69,7 +69,9 @@ Ghost ផ្តល់នូវ **មុខងារពង្រឹង Windows �
 ### ការវាយតម្លៃសុវត្ថិភាព
 ```powershell
 # ផ្ទុកម៉ូឌុល Ghost
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 
 # ពិនិត្យមើលការតាំងពូជសុវត្ថិភាពបច្ចុប្បន្ន
 Get-Ghost
@@ -97,7 +99,9 @@ Set-Ghost -SMBv1 -RDP -USBStorage -Intune
 
 ### ជម្រើសទី ១: ទាញយកដោយផ្ទាល់ (ការធ្វើតេស្ត)
 ```powershell
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 ```
 
 ### ជម្រើសទី ២: ការដំឡើងម៉ូឌុល
